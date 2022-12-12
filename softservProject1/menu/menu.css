@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+    padding: 0%;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color: #08d608;
+    --main-color-dark: #034206;
+}
+
+body {
+    font-weight: 300;
+    font-size: 1.05rem;
+    background-color: #05c5e7;
+    line-height: 1.6;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.header {
+    background-color: #08d608;
+    margin-bottom: 20px;
+    padding: 30px 0;
+    grid-column: 1/-1;
+    text-align: center;
+}
+
+.header>h2 {
+    font-weight: 400;
+    font-size: 30px;
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+}
+
+.menu {
+    display: grid;
+    padding: 0 10px 30px 10px;
+    grid-template-columns: repeat(3, 2fr);
+    
+}
+
+.menu-items {
+    display: grid;
+    position: relative;
+    
+    border-radius: 15px;
+}
+
+.menu-items img {
+    position: relative;
+    width: 100%;
+    border-radius: 15px;
+   
+}
+
+h1{
+    grid-column: 1/-1;
+    text-align: center;
+}
+
+.description{
+    padding: 25px 15px;
+    display: grid;
+    grid-template-rows: auto 1fr 50px;
+    grid-row-gap: 15px;
+}
+
+.description-lower{
+    display: grid;
+    grid-template-columns: auto auto;
+   
+}
+.description-lower>h5{
+    font-weight: 500;
+    font-size: 18px; 
+}
+
+.price{
+    text-align: right;
+}
+.description>p{
+    color: #ffffff;
+    font-size: 20px;
+    line-height: 15px;
+    font-weight: 500;
+    align-self: stretch;
+}
+
+.description>button{
+    background-color: #08d608;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 6px;
+    width: 180px;
+}
+
+.navigation {
+   
+    background: var(--main-color);
+    font-weight: 500;
+    font-size: 2rem;
+    text-align: center;
+    padding: 0.75rem 0;
+    display: inline-block;
+    width: 200px;
+    
+    margin: 1rem auto;
+    border-radius: 2rem;
+    
+    background-color: #efff08;
+    height: 80px;
+    align-content: center;
+
+}
+
+@media screen and (min-width: 600px) {
+    .recipe-searchbar {
+        width: 540px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    #Recipe {
+
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 2rem;
+
+    }
+
+    .recipe-item {
+        margin: 0;
+
+    }
+}
+
+@media screen and (min-width: 992px) {
+    #Recipe {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

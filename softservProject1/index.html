@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What can I cook? (pre-alpha version)</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<nav>
+    <ul>
+        <li class="navigation"><a href="index.html" style="text-decoration:none;">Home</a></li>
+        <li class="navigation"><a href="index.html" style="text-decoration:none;">Find recipes</a></li>
+        <li class="navigation"><a href="about/about.html" style="text-decoration:none;">About Us</a></li>
+        <li class="navigation"><a href="about/contactUs/contacts.html" style="text-decoration:none;">Contact Us</a></li >
+            <li class="navigation"><a href="menu/menu.html" style="text-decoration:none;">Menu</a></li >
+            <li class="navigation"><a href="" style="text-decoration:none;">Cart(soon)</a></li>
+    </ul>
+</nav>
+    <div class="container">
+        <div class="recipe-wrapper">
+            <div class="recipe-search">
+                <h2 class="title">We can help you find recipes with whatever you have in the fridge!</h2>
+
+                <blockquote>
+                    <cite>Quick, easy, tasty<br>
+                     - Chef Uti Buchvarov</cite>
+                </blockquote>
+
+
+                <div class = "aboutUsLink">
+                    <a href = "about/about.html">→Learn more about us←</a>
+                </div>
+                    
+                <div class="recipe-searchbar">
+                    <input type="text" class="searchbar" placeholder="What's in the fridge?" id="searchbar-input">
+                    <button type="submit" class="search-btn btn" id="search-btn">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="found-recipes">
+                <h2 class="title">Your ingredient can be used in the following:</h2>
+
+                <div id="Recipe">
+                <template data-recipe-template>
+
+                    <div class = "meal-item">
+                        <div class = "meal-img">
+                          <img src = "food.jpg" alt = "food">
+                        </div>
+                        <div class = "meal-name">
+                          <h3>Potato Chips</h3>
+                          <a href = "#" class = "recipe-btn" >Get Recipe</a>
+                        </div>
+                      </div>
+                
+                </template>
+
+                    
+                </div>
+            </div>  
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
